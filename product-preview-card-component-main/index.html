@@ -11,6 +11,24 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Product preview card component</title>
 
@@ -29,22 +47,29 @@
     <main>
       <article class="product">
         <picture>
-          <img src="" alt="" srcset="" media="(min-width: 600px)" />
+          <source
+            src="images/image-product-desktop.jpg"
+            alt=""
+            srcset="images/image-product-desktop.jpg"
+            media="(min-width: 600px)"
+          />
           <img src="images/image-product-mobile.jpg" alt="" />
         </picture>
 
-        <div class="product__contents">
-          <p>Preview</p>
-          <h1>Gabrielle Essence Eau De Parfum</h1>
+        <div class="product__content">
+          <p class="product__category">Perfume</p>
+          <h1 class="product__title">Gabrielle Essence Eau De Parfum</h1>
 
           <p>
             A floral, solar and voluptuous interpretation composed by Olivier
             Polge, Perfumer-Creator for the House of CHANEL.
           </p>
+
           <div class="flex-group">
             <h1>$149.99</h1>
             <p>$169.99</p>
           </div>
+
           <button>Add to Cart</button>
         </div>
       </article>
