@@ -1,0 +1,29 @@
+:root {
+  --clr-primary: "";
+  --clr-secondary: "";
+
+  --ff-base: "";
+  --ff-accent: "";
+
+  --fw-bold-900: "";
+  --fw-regul-: "";
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+}
+
+img,
+canvas {
+  display: block;
+  max-width: 100%;
+}
