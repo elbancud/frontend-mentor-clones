@@ -33,7 +33,7 @@
     </style>
   </head>
   <body>
-    <header>
+    <header class="container">
       <img src="assets/images/logo.svg" alt="W with a dot" />
       <nav>
         <div class="burger">
@@ -49,24 +49,27 @@
       </nav>
     </header>
 
-    <main>
+    <main class="container">
       <article class="showcase">
         <picture>
           <source
+            src="assets/images/image-web-3-desktop.jpg"
             srcset="assets/images/image-web-3-desktop.jpg"
-            media="min-width(600px)"
+            media="(min-width: 600px)"
           />
           <img src="assets/images/image-web-3-mobile.jpg" alt="" />
         </picture>
         <div class="article__content">
           <h2>The Bright Future of Web 3.0?</h2>
-          <p>
-            We dive into the next evolution of the web that claims to put the
-            power of the platforms back into the hands of the people. But is it
-            really fulfilling its promise?
-          </p>
           <div>
-            <button>Read more</button>
+            <p>
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <div>
+              <button>Read more</button>
+            </div>
           </div>
         </div>
       </article>
@@ -96,8 +99,8 @@
       </article>
     </main>
 
-    <section class="secondary__article">
-      <div class="secondary__article-content">
+    <section class="secondary__article container">
+      <div class="cards">
         <img src="assets/images/image-retro-pcs.jpg" alt="" />
         <div class="secondary__article-description">
           <h3>01</h3>
@@ -106,7 +109,7 @@
         </div>
       </div>
 
-      <div class="secondary__article-content">
+      <div class="cards">
         <img src="assets/images/image-top-laptops.jpg" alt="" />
         <div class="secondary__article-description">
           <h3>02</h3>
@@ -115,7 +118,7 @@
         </div>
       </div>
 
-      <div class="secondary__article-content">
+      <div class="cards">
         <img src="assets/images/image-gaming-growth.jpg" alt="" />
         <div class="secondary__article-description">
           <h3>03</h3>
