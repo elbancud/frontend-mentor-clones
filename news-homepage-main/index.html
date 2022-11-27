@@ -14,6 +14,13 @@
     <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | News homepage</title>
 
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap"
+      rel="stylesheet"
+    />
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
@@ -26,99 +33,96 @@
     </style>
   </head>
   <body>
+    <header>
+      <img src="assets/images/logo.svg" alt="W with a dot" />
+      <nav>
+        <div class="burger">
+          <img src="assets/images/icon-menu.svg" alt="" />
+        </div>
+        <ul class="nav__list isActive">
+          <li class="nav__items">Home</li>
+          <li class="nav__items">New</li>
+          <li class="nav__items">Popular</li>
+          <li class="nav__items">Trending</li>
+          <li class="nav__items">Categories</li>
+        </ul>
+      </nav>
+    </header>
+
     <main>
-      <header>
-        <nav>
-          <img src="assets/images/logo.svg" alt="W with a dot" />
-          <div class="burger">
-            <img src="assets/images/icon-menu.svg" alt="" />
-          </div>
-          <ul class="nav__list">
-            <li class="nav__items">Home</li>
-            <li class="nav__items">New</li>
-            <li class="nav__items">Popular</li>
-            <li class="nav__items">Trending</li>
-            <li class="nav__items">Categories</li>
-          </ul>
-        </nav>
-      </header>
-
-      <main>
-        <article>
-          <picture>
-            <source
-              src="assets/images/image-web-3-desktop.jpg"
-              srcset=""
-              media="min-width(600px)"
-            />
-            <img src="assets/images/image-web-3-mobile.jpg" alt="" />
-          </picture>
-          <div class="article__content">
-            <h2>The Bright Future of Web 3.0?</h2>
-            <p>
-              We dive into the next evolution of the web that claims to put the
-              power of the platforms back into the hands of the people. But is
-              it really fulfilling its promise?
-            </p>
-            <div>
-              <button>Read more</button>
-            </div>
-          </div>
-        </article>
-
-        <article>
-          <h3>New</h3>
+      <article class="showcase">
+        <picture>
+          <source
+            srcset="assets/images/image-web-3-desktop.jpg"
+            media="min-width(600px)"
+          />
+          <img src="assets/images/image-web-3-mobile.jpg" alt="" />
+        </picture>
+        <div class="article__content">
+          <h2>The Bright Future of Web 3.0?</h2>
+          <p>
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
           <div>
-            <h4>Hydrogen VS Electric Cars</h4>
-            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-          </div>
-
-          <div>
-            <h4>The Downsides of AI Artistry</h4>
-            <p>
-              What are the possible adverse effects of on-demand AI image
-              generation?
-            </p>
-          </div>
-
-          <div>
-            <h4>Is VC Funding Drying Up?</h4>
-            <p>
-              Private funding by VC firms is down 50% YOY. We take a look at
-              what that means.
-            </p>
-          </div>
-        </article>
-      </main>
-
-      <section>
-        <div>
-          <img src="assets/images/image-gaming-growth.jpg" alt="" />
-          <div>
-            <h3>01</h3>
-            <h4>Reviving Retro PCs</h4>
-            <p>What happens when old Pcs are given modern upgrades</p>
+            <button>Read more</button>
           </div>
         </div>
+      </article>
 
-        <div>
-          <img src="assets/images/image-gaming-growth.jpg" alt="" />
-          <div>
-            <h3>01</h3>
-            <h4>Reviving Retro PCs</h4>
-            <p>What happens when old Pcs are given modern upgrades</p>
-          </div>
+      <article class="side__article">
+        <h3 class="category">New</h3>
+        <div class="side__article-content">
+          <h4>Hydrogen VS Electric Cars</h4>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
         </div>
 
-        <div>
-          <img src="assets/images/image-gaming-growth.jpg" alt="" />
-          <div>
-            <h3>01</h3>
-            <h4>Reviving Retro PCs</h4>
-            <p>What happens when old Pcs are given modern upgrades</p>
-          </div>
+        <div class="side__article-content">
+          <h4>The Downsides of AI Artistry</h4>
+          <p>
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
         </div>
-      </section>
+
+        <div class="side__article-content">
+          <h4>Is VC Funding Drying Up?</h4>
+          <p>
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </div>
+      </article>
     </main>
+
+    <section>
+      <div>
+        <img src="assets/images/image-gaming-growth.jpg" alt="" />
+        <div>
+          <h3>01</h3>
+          <h4>Reviving Retro PCs</h4>
+          <p>What happens when old Pcs are given modern upgrades</p>
+        </div>
+      </div>
+
+      <div>
+        <img src="assets/images/image-gaming-growth.jpg" alt="" />
+        <div>
+          <h3>01</h3>
+          <h4>Reviving Retro PCs</h4>
+          <p>What happens when old Pcs are given modern upgrades</p>
+        </div>
+      </div>
+
+      <div>
+        <img src="assets/images/image-gaming-growth.jpg" alt="" />
+        <div>
+          <h3>01</h3>
+          <h4>Reviving Retro PCs</h4>
+          <p>What happens when old Pcs are given modern upgrades</p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

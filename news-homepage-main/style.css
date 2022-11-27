@@ -1,4 +1,19 @@
 :root {
+  /* colors */
+  --clr-primary-orange-400: hsl(35, 77%, 62%);
+  --clr-primary-red-400: hsl(5, 85%, 63%);
+
+  --clr-neutral-100: hsl(36, 100%, 99%);
+  --clr-neutral-200: hsl(233, 8%, 79%);
+  --clr-neutral-500: hsl(236, 13%, 42%);
+  --clr-neutral-900: hsl(240, 100%, 5%);
+
+  /* font-weight & Family */
+  --ff-base: "Inter", sans-serif;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 800;
 }
 *,
 *::before,
@@ -20,8 +35,11 @@ body {
   5. Improve text rendering
 */
 body {
-  line-height: 1.5;
+  font-family: var(--ff-base);
+  font-size: 15px;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  margin: 1rem;
 }
 /*
   6. Improve media defaults
@@ -57,4 +75,95 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+ul,
+li {
+  list-style: none;
+}
+/* utilities */
+
+header {
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .nav__list {
+  display: none;
+}
+
+main .showcase {
+  padding: 1.5rem 0;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+main .showcase h2 {
+  line-height: 1;
+  font-size: 2.5rem;
+  font-weight: var(--fw-bold);
+  margin: 1rem 0;
+}
+main .showcase p {
+  margin: 1rem 0;
+  color: var(--clr-neutral-500);
+  font-weight: var(--fw-medium);
+}
+
+main button {
+  border: none;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-weight: var(--fw-medium);
+  letter-spacing: 5px;
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-primary-red-400);
+}
+
+.side__article {
+  margin: 3rem 0;
+  background-color: var(--clr-neutral-900);
+  color: var(--clr-neutral-100);
+  padding: 1rem;
+}
+.side__article .category {
+  font-size: 1.8rem;
+  color: var(--clr-primary-orange-400);
+}
+.side__article .side__article-content {
+  width: 100%;
+  padding: 2rem 0;
+  position: relative;
+}
+.side__article .side__article-content:not(:last-child)::after {
+  content: "";
+  background-color: var(--clr-neutral-500);
+  height: 1px;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+
+.side__article-content h4 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+.side__article-content p {
+  color: var(--clr-neutral-200);
+}
+
+@media (min-width: 600px) {
+  header nav .burger {
+    display: none;
+  }
+  header nav .nav__list {
+    display: flex;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
