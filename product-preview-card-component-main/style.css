@@ -45,13 +45,16 @@ canvas {
   background-color: var(--clr-neutral-100);
   border-radius: 0.5rem;
   overflow: hidden;
+  max-width: 600px;
 }
+
 @media (min-width: 600px) {
   .product {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
+
 .product__content {
   padding: 1rem;
   gap: 1rem;
