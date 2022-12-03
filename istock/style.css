@@ -1,7 +1,7 @@
 :root {
   --clr-gray-200: #f5f5f5;
   --clr-gray-400: #dbf1ff;
-  --clr-gray-500: #474747;
+  --clr-gray-500: #dce1e1;
   --clr-gray-800: #181a1a;
   --clr-gray-900: #0c0d0d;
 
@@ -58,13 +58,58 @@
   border: 1px solid #dae8e7;
   margin: 0 0.4rem;
 }
+.card-regular {
+  border: 1px solid #ccd3d3;
+  background-color: #fff;
+  color: initial;
+}
 .card-border p {
   margin: 0.35rem 0;
 }
+.card-solo {
+  position: relative;
+}
+.card__image {
+  background-color: #000;
+}
+.card-solo img {
+  opacity: 0.6;
+}
+.card-solo .absolute {
+  position: absolute;
+  left: 43px;
+  top: 60px;
+}
+.card-solo .absolute h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.card-solo .absolute p:not(:last-child) {
+  margin: 1rem 0;
+  max-width: 50% !important;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffd900;
+}
+.card-solo .absolute p {
+  font-size: 11px;
+}
+.card-regular .card__description {
+  padding: 1rem;
+}
+.card-regular .card__description h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+/* .card-solo img {
+  position: absolute;
+} */
 .content__wrapper {
   margin: 0 auto;
   max-width: 1050px;
   font-size: 14px;
+  padding: 3rem 1rem;
 }
 .flex__group {
   display: flex;
@@ -126,22 +171,47 @@ header .istock__searchBtn {
 section {
   margin: 2.5rem 0;
 }
+/* ================================ Promo Banner ===================================== */
+.promo-banner .grid__group {
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: (1, 1fr);
+}
 
+@media (min-width: 1024px) {
+  .promo-banner .grid__group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .card-solo .absolute h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+  }
+  .card-solo .absolute p:not(:last-child) {
+    font-size: 20px;
+    color: #ffd900;
+  }
+  .card-solo .absolute p {
+    font-size: 15px;
+  }
+}
 /* ================================ Free stock ===================================== */
 
 .free-stock {
   text-align: center;
 }
-
+.free-stock p {
+  margin: 1.5rem 0;
+}
 /* ================================ Footer ========================================= */
 
-footer .headline {
-  text-align: center;
-  padding: 1rem;
-}
 footer .headline h3 {
+  text-align: center;
+  padding: 2rem;
   font-size: 18px;
 }
+
 footer .footer__wrapper ul li {
   margin-bottom: 0.2rem;
 }
@@ -165,7 +235,7 @@ footer .footer__copyright {
   border-top: 1px solid #353838;
 }
 footer .social__media {
-  display: inline-block;
+  display: inline-block !important;
   padding: 0.5rem;
   background-color: #474747;
   border-radius: 5px;
@@ -174,14 +244,19 @@ footer .social__media {
 /* ================================ media query 1024px ===================================== */
 
 @media (min-width: 1024px) {
+  .content_wrapper div {
+    max-width: 160px;
+  }
   footer .grid__group {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
   }
-  .content_wrapper div {
-    max-width: 160px;
-  }
   footer .footer__form {
     margin-right: 5rem;
+  }
+  footer .headline h3 {
+    text-align: center;
+    padding: 2rem;
+    font-size: 21px;
   }
 }
