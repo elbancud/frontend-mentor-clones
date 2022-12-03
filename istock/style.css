@@ -211,6 +211,8 @@ header .search__engine {
   padding: 0.5rem 1rem;
   display: flex;
   gap: 1rem;
+  width: 100%;
+  justify-content: space-between;
 }
 header .hero__container {
   position: relative;
@@ -268,8 +270,12 @@ header .search__engine .search__engine-images {
   padding: 0.7rem 0;
   padding-right: 1rem;
 }
+header .search__inputcontainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
 header .search__input {
-  flex-grow: 1;
   background: none;
   border: none;
   box-shadow: none;
@@ -278,15 +284,12 @@ header .search__input {
   font-weight: 400;
   height: 100%;
   margin: 0;
-  min-width: 60px;
   padding: 7px;
   text-overflow: ellipsis;
-  width: 100% !important;
+  width: 100%;
   position: relative;
 }
 header .search__input-icon {
-  position: absolute;
-  right: 0;
 }
 header .search__engine-imageName {
   display: none;
@@ -619,9 +622,6 @@ footer .flex__group {
 /* ================================ media query 1024px ===================================== */
 
 @media (min-width: 1024px) {
-  .content_wrapper div {
-    max-width: 160px;
-  }
   footer .grid__group {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
