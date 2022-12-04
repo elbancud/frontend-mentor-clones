@@ -48,7 +48,7 @@ body {
     sans-serif;
 }
 h1 {
-  font-size: clamp(1.5rem, 10vw, 56px);
+  font-size: clamp(1.5rem, 10vw, 66px);
   text-transform: uppercase;
   line-height: 1;
   font-weight: bolder;
@@ -150,6 +150,14 @@ header .btn-white {
 .solo-container {
   padding: 3rem 1.5rem;
   background-color: #f6f6f6;
+}
+.solo-container h1 {
+  margin-top: 3rem;
+  font-size: 50px;
+}
+.solo-container p {
+  max-width: 900px;
+  margin: 0 auto;
 }
 .solo-container button {
   margin: 0 auto;
@@ -257,7 +265,7 @@ footer .footer-imagine h1 {
     width: 100%;
     z-index: 0;
     margin-left: -25rem;
-    width: 150%;
+    width: 140%;
   }
   header .header-characters {
     position: absolute;
